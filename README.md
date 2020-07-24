@@ -11,4 +11,10 @@ $ wasm-pack build --target nodejs --scope bouzuya
 [INFO]: Optional fields missing from Cargo.toml: 'description', 'repository', and 'license'. These are not necessary, but recommended
 [INFO]: ✨   Done in 0.71s
 [INFO]: 📦   Your wasm pkg is ready to publish at /Users/bouzuya/tsv-wasm/pkg
+
+$ # npm publish
+$ wasm-pack login
+# ...
+$ wasm-pack publish --target nodejs --access public pkg
+# ...
 ```
